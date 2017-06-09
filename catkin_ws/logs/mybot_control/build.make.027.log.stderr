@@ -1,0 +1,23 @@
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:9:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kfloat y1[m[K’ redeclared as different kind of symbol
+ float y1 = 0.0;
+[01;32m[K       ^[m[K
+In file included from [01m[K/usr/include/features.h:367:0[m[K,
+                 from [01m[K/usr/include/stdlib.h:24[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:251:1:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kdouble y1(double)[m[K’
+ __MATHCALL (y1,, (_Mdouble_));
+[01;32m[K ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:[m[K In member function ‘[01m[Kvoid BotControl::ScanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:39:54:[m[K [01;31m[Kerror: [m[Kinvalid operands of types ‘[01m[Kfloat[m[K’ and ‘[01m[Kdouble(double) throw ()[m[K’ to binary ‘[01m[Koperator-[m[K’
+    float a = sqrt(pow(x_goal - x1, 2) + pow(y_goal - y1, 2));
+[01;32m[K                                                      ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:49:7:[m[K [01;31m[Kerror: [m[Kassignment of function ‘[01m[Kdouble y1(double)[m[K’
+    y1 = y;
+[01;32m[K       ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:49:7:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kfloat[m[K’ to ‘[01m[Kdouble(double) throw ()[m[K’ in assignment
+make[2]: *** [CMakeFiles/coll_avoid.dir/src/coll_avoid.cpp.o] Ошибка 1
+make[1]: *** [CMakeFiles/coll_avoid.dir/all] Ошибка 2
+make: *** [all] Ошибка 2

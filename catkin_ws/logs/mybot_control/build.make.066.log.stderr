@@ -1,0 +1,13 @@
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:[m[K In member function ‘[01m[Kvoid BotControl::ScanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:18:[m[K [01;31m[Kerror: [m[Kmissing template arguments before ‘[01m[Kit[m[K’
+    for (iterator it = myMap.begin(); it != myFirmyMapstMap.end(); ++it)///вывод на экран
+[01;32m[K                  ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kit[m[K’ was not declared in this scope
+    for (iterator it = myMap.begin(); it != myFirmyMapstMap.end(); ++it)///вывод на экран
+[01;32m[K                                      ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:44:[m[K [01;31m[Kerror: [m[K‘[01m[KmyFirmyMapstMap[m[K’ was not declared in this scope
+    for (iterator it = myMap.begin(); it != myFirmyMapstMap.end(); ++it)///вывод на экран
+[01;32m[K                                            ^[m[K
+make[2]: *** [CMakeFiles/coll_avoid.dir/src/coll_avoid.cpp.o] Ошибка 1
+make[1]: *** [CMakeFiles/coll_avoid.dir/all] Ошибка 2
+make: *** [all] Ошибка 2

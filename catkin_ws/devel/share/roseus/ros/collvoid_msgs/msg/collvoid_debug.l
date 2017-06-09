@@ -1,0 +1,1 @@
+/home/anton/catkin_ws/devel/.private/collvoid_msgs/share/roseus/ros/collvoid_msgs/msg/collvoid_debug.l

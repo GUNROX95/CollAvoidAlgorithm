@@ -1,0 +1,6 @@
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:8:1:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kvoid[m[K’
+ void ScanCallback(const sensor_msgs::LaserScan::ConstPtr& msg){
+[01;32m[K ^[m[K
+make[2]: *** [CMakeFiles/coll_avoid.dir/src/coll_avoid.cpp.o] Ошибка 1
+make[1]: *** [CMakeFiles/coll_avoid.dir/all] Ошибка 2
+make: *** [all] Ошибка 2

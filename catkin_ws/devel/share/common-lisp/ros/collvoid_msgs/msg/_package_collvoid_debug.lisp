@@ -1,0 +1,1 @@
+/home/anton/catkin_ws/devel/.private/collvoid_msgs/share/common-lisp/ros/collvoid_msgs/msg/_package_collvoid_debug.lisp

@@ -1,0 +1,9 @@
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:[m[K In function ‘[01m[Kvoid ScanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:10:5:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator![m[K’ (operand type is ‘[01m[Kconst _ranges_type {aka const std::vector<float>}[m[K’)
+  if(!(msg->ranges)){
+[01;32m[K     ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:10:5:[m[K [01;36m[Knote: [m[Kcandidate: operator!(bool) <built-in>
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:10:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kconst _ranges_type {aka const std::vector<float>}[m[K’ to ‘[01m[Kbool[m[K’
+make[2]: *** [CMakeFiles/coll_avoid.dir/src/coll_avoid.cpp.o] Ошибка 1
+make[1]: *** [CMakeFiles/coll_avoid.dir/all] Ошибка 2
+make: *** [all] Ошибка 2

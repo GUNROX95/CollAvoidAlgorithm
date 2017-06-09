@@ -1,0 +1,1 @@
+/home/anton/catkin_ws/devel/.private/vkr/share/vkr/cmake/vkrConfig.cmake

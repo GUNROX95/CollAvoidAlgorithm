@@ -1,0 +1,328 @@
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:[m[K In member function ‘[01m[Kvoid BotControl::ScanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:57:[m[K [01;31m[Kerror: [m[Kconversion from ‘[01m[Kstd::map<int, float>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, float> >}[m[K’ to non-scalar type ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ requested
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                         ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:64:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator!=[m[K’ (operand types are ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ and ‘[01m[Kstd::map<int, float>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, float> >}[m[K’)
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                ^[m[K
+In file included from [01m[K/usr/include/c++/5/map:60:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_tree.h:237:7:[m[K [01;36m[Knote: [m[Kcandidate: bool std::_Rb_tree_iterator<_Tp>::operator!=(const _Self&) const [with _Tp = std::pair<const int, double>; std::_Rb_tree_iterator<_Tp>::_Self = std::_Rb_tree_iterator<std::pair<const int, double> >]
+       operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
+[01;32m[K       ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_tree.h:237:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::map<int, float>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, float> >}[m[K’ to ‘[01m[Kconst _Self& {aka const std::_Rb_tree_iterator<std::pair<const int, double> >&}[m[K’
+In file included from [01m[K/usr/include/c++/5/bits/stl_algobase.h:64:0[m[K,
+                 from [01m[K/usr/include/c++/5/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/5/string:40[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_pair.h:227:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)
+     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_pair.h:227:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::pair<_T1, _T2>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/5/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/5/string:40[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_iterator.h:304:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Iterator> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)
+     operator!=(const reverse_iterator<_Iterator>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_iterator.h:304:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/bits/stl_algobase.h:67:0[m[K,
+                 from [01m[K/usr/include/c++/5/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/5/string:40[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_iterator.h:354:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _IteratorL, class _IteratorR> bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)
+     operator!=(const reverse_iterator<_IteratorL>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_iterator.h:354:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/bits/char_traits.h:40:0[m[K,
+                 from [01m[K/usr/include/c++/5/string:40[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)
+     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/postypes.h:221:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::fpos<_StateT>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/string:41:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/allocator.h:140:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)
+     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/allocator.h:140:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/string:41:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/allocator.h:146:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_CharT>&)
+     operator!=(const allocator<_Tp>&, const allocator<_Tp>&)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/allocator.h:146:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::allocator<_CharT>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/string:52:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/basic_string.h:4950:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/basic_string.h:4950:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/string:52:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/basic_string.h:4962:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&)
+     operator!=(const _CharT* __lhs,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/basic_string.h:4962:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst _CharT*[m[K’ and ‘[01m[Kstd::_Rb_tree_iterator<std::pair<const int, double> >[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/string:52:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/platform.h:55[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/basic_string.h:4974:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>&, const _CharT*)
+     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/basic_string.h:4974:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::basic_string<_CharT, _Traits, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/bits/locale_facets.h:48:0[m[K,
+                 from [01m[K/usr/include/c++/5/bits/basic_ios.h:37[m[K,
+                 from [01m[K/usr/include/c++/5/ios:44[m[K,
+                 from [01m[K/usr/include/c++/5/ostream:38[m[K,
+                 from [01m[K/usr/include/c++/5/iostream:39[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:54[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)
+     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/streambuf_iterator.h:210:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::istreambuf_iterator<_CharT, _Traits>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21:0[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:15[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/complex:476:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const std::complex<_Tp>&, const std::complex<_Tp>&)
+     operator!=(const complex<_Tp>& __x, const complex<_Tp>& __y)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/complex:476:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21:0[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:15[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/complex:481:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const std::complex<_Tp>&, const _Tp&)
+     operator!=(const complex<_Tp>& __x, const _Tp& __y)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/complex:481:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21:0[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:15[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/complex:486:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp> bool std::operator!=(const _Tp&, const std::complex<_Tp>&)
+     operator!=(const _Tp& __x, const complex<_Tp>& __y)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/complex:486:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, float>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, float> >}[m[K’ is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/vector:64:0[m[K,
+                 from [01m[K/usr/include/boost/format.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:31[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_vector.h:1535:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)
+     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_vector.h:1535:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::vector<_Tp, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/map:60:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_tree.h:330:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Val> bool std::operator!=(const std::_Rb_tree_iterator<_Tp>&, const std::_Rb_tree_const_iterator<_Val>&)
+     operator!=(const _Rb_tree_iterator<_Val>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_tree.h:330:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, float>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, float> >}[m[K’ is not derived from ‘[01m[Kconst std::_Rb_tree_const_iterator<_Val>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/map:60:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_tree.h:1293:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Key, class _Val, class _KeyOfValue, class _Compare, class _Alloc> bool std::operator!=(const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&, const std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&)
+     operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_tree.h:1293:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/map:61:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_map.h:1097:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Alloc>&, const std::map<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_map.h:1097:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::map<_Key, _Tp, _Compare, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/map:62:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/console.h:42[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:40[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_multimap.h:998:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Alloc>&, const std::multimap<_Key, _Tp, _Compare, _Alloc>&)
+     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_multimap.h:998:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::multimap<_Key, _Tp, _Compare, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/set:61:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/forwards.h:34[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_set.h:866:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Alloc>&, const std::set<_Key, _Compare, _Alloc>&)
+     operator!=(const set<_Key, _Compare, _Alloc>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_set.h:866:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::set<_Key, _Compare, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/set:62:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/forwards.h:34[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_multiset.h:849:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Alloc>&, const std::multiset<_Key, _Compare, _Alloc>&)
+     operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_multiset.h:849:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::multiset<_Key, _Compare, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/list:63:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/forwards.h:35[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_list.h:291:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Val> bool std::operator!=(const std::_List_iterator<_Tp>&, const std::_List_const_iterator<_Val>&)
+     operator!=(const _List_iterator<_Val>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_list.h:291:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::_List_iterator<_Tp>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/list:63:0[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/forwards.h:35[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/common.h:37[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:43[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stl_list.h:1843:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _Alloc> bool std::operator!=(const std::__cxx11::list<_Tp, _Alloc>&, const std::__cxx11::list<_Tp, _Alloc>&)
+     operator!=(const list<_Tp, _Alloc>& __x, const list<_Tp, _Alloc>& __y)
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stl_list.h:1843:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::__cxx11::list<_Tp, _Alloc>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/usr/include/c++/5/iterator:66:0[m[K,
+                 from [01m[K/usr/include/boost/detail/iterator.hpp:11[m[K,
+                 from [01m[K/usr/include/boost/array.hpp:48[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/message.h:38[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/publisher.h:33[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/node_handle.h:32[m[K,
+                 from [01m[K/opt/ros/kinetic/include/ros/ros.h:45[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/usr/include/c++/5/bits/stream_iterator.h:137:5:[m[K [01;36m[Knote: [m[Kcandidate: template<class _Tp, class _CharT, class _Traits, class _Dist> bool std::operator!=(const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&, const std::istream_iterator<_Tp, _CharT, _Traits, _Dist>&)
+     operator!=(const istream_iterator<_Tp, _CharT, _Traits, _Dist>& __x,
+[01;32m[K     ^[m[K
+[01m[K/usr/include/c++/5/bits/stream_iterator.h:137:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:52:77:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::map<int, double>::iterator {aka std::_Rb_tree_iterator<std::pair<const int, double> >}[m[K’ is not derived from ‘[01m[Kconst std::istream_iterator<_Tp, _CharT, _Traits, _Dist>[m[K’
+    for (std::map<int, double>::iterator it = myMap.begin(); it != myMap.end(); ++it)///вывод на экран
+[01;32m[K                                                                             ^[m[K
+In file included from [01m[K/opt/ros/kinetic/include/ros/ros.h:40:0[m[K,
+                 from [01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:1[m[K:
+[01m[K/opt/ros/kinetic/include/ros/console.h:346:176:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 8 has type ‘[01m[Kint[m[K’ [-Wformat=]
+     ::ros::console::print(filter, __rosconsole_define_location__loc.logger_, __rosconsole_define_location__loc.level_, __FILE__, __LINE__, __ROSCONSOLE_FUNCTION__, __VA_ARGS__)
+[01;32m[K                                                                                                                                                                                ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:349:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER[m[K’
+     ROSCONSOLE_PRINT_AT_LOCATION_WITH_FILTER(0, __VA_ARGS__)
+[01;32m[K     ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:379:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROSCONSOLE_PRINT_AT_LOCATION[m[K’
+       ROSCONSOLE_PRINT_AT_LOCATION(__VA_ARGS__); \
+[01;32m[K       ^[m[K
+[01m[K/opt/ros/kinetic/include/ros/console.h:561:35:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG_COND[m[K’
+ #define ROS_LOG(level, name, ...) ROS_LOG_COND(true, level, name, __VA_ARGS__)
+[01;32m[K                                   ^[m[K
+[01m[K/opt/ros/kinetic/include/rosconsole/macros_generated.h:110:23:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_LOG[m[K’
+ #define ROS_INFO(...) ROS_LOG(::ros::console::levels::Info, ROSCONSOLE_DEFAULT_NAME, __VA_ARGS__)
+[01;32m[K                       ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:54:7:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KROS_INFO[m[K’
+       ROS_INFO("first = %f, second = %f, alpha = %f", it->first, it->second, alpha);
+[01;32m[K       ^[m[K
+make[2]: *** [CMakeFiles/coll_avoid.dir/src/coll_avoid.cpp.o] Ошибка 1
+make[1]: *** [CMakeFiles/coll_avoid.dir/all] Ошибка 2
+make: *** [all] Ошибка 2

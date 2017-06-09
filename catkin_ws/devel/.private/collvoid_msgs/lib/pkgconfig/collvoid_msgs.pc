@@ -1,0 +1,8 @@
+prefix=/home/anton/catkin_ws/devel/.private/collvoid_msgs
+
+Name: collvoid_msgs
+Description: Description of collvoid_msgs
+Version: 1.0.0
+Cflags: -I/home/anton/catkin_ws/devel/.private/collvoid_msgs/include
+Libs: -L/home/anton/catkin_ws/devel/.private/collvoid_msgs/lib 
+Requires: geometry_msgs nav_msgs

@@ -1,0 +1,1 @@
+/home/anton/catkin_ws/devel/.private/mybot_control/lib/pkgconfig/mybot_control.pc

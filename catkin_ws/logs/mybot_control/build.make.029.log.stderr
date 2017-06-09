@@ -1,0 +1,11 @@
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:[m[K In member function ‘[01m[Kvoid BotControl::ScanCallback(const ConstPtr&)[m[K’:
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:48:4:[m[K [01;31m[Kerror: [m[K‘[01m[Kx1[m[K’ was not declared in this scope
+    x1 = x;
+[01;32m[K    ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:49:7:[m[K [01;31m[Kerror: [m[Kassignment of function ‘[01m[Kdouble y1(double)[m[K’
+    y1 = y;
+[01;32m[K       ^[m[K
+[01m[K/home/anton/catkin_ws/src/mybot_ws/src/mybot_control/src/coll_avoid.cpp:49:7:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kdouble[m[K’ to ‘[01m[Kdouble(double) throw ()[m[K’ in assignment
+make[2]: *** [CMakeFiles/coll_avoid.dir/src/coll_avoid.cpp.o] Ошибка 1
+make[1]: *** [CMakeFiles/coll_avoid.dir/all] Ошибка 2
+make: *** [all] Ошибка 2

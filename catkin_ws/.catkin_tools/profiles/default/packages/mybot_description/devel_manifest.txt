@@ -1,0 +1,4 @@
+mybot_ws/src/mybot_description
+/home/anton/catkin_ws/devel/.private/mybot_description/share/mybot_description/cmake/mybot_descriptionConfig-version.cmake /home/anton/catkin_ws/devel/share/mybot_description/cmake/mybot_descriptionConfig-version.cmake
+/home/anton/catkin_ws/devel/.private/mybot_description/share/mybot_description/cmake/mybot_descriptionConfig.cmake /home/anton/catkin_ws/devel/share/mybot_description/cmake/mybot_descriptionConfig.cmake
+/home/anton/catkin_ws/devel/.private/mybot_description/lib/pkgconfig/mybot_description.pc /home/anton/catkin_ws/devel/lib/pkgconfig/mybot_description.pc

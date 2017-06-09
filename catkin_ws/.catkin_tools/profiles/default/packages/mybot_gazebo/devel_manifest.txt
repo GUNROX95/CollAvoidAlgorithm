@@ -1,0 +1,4 @@
+mybot_ws/src/mybot_gazebo
+/home/anton/catkin_ws/devel/.private/mybot_gazebo/share/mybot_gazebo/cmake/mybot_gazeboConfig.cmake /home/anton/catkin_ws/devel/share/mybot_gazebo/cmake/mybot_gazeboConfig.cmake
+/home/anton/catkin_ws/devel/.private/mybot_gazebo/share/mybot_gazebo/cmake/mybot_gazeboConfig-version.cmake /home/anton/catkin_ws/devel/share/mybot_gazebo/cmake/mybot_gazeboConfig-version.cmake
+/home/anton/catkin_ws/devel/.private/mybot_gazebo/lib/pkgconfig/mybot_gazebo.pc /home/anton/catkin_ws/devel/lib/pkgconfig/mybot_gazebo.pc

@@ -1,0 +1,8 @@
+prefix=/home/anton/catkin_ws/devel/.private/vkr
+
+Name: vkr
+Description: Description of vkr
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/anton/catkin_ws/devel/.private/vkr/lib 
+Requires: 
