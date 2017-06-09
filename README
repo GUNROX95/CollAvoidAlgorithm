@@ -1,1 +1,4 @@
 CPP file of Collision Avoidance Algorithm placed in catkin_ws/src/mybot_ws/src/mybot_control/src/
+
+To build project go into catkin_ws/ and execute the command "catkin build"
+To run simulation go into catkin_ws/src/mybot_ws/ and run script
